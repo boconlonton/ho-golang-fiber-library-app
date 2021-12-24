@@ -4,7 +4,7 @@ import (
 	"github.com/boconlonton/ho-golang-fiber-library-app/app/models"
 	"github.com/boconlonton/ho-golang-fiber-library-app/app/utils"
 	"github.com/boconlonton/ho-golang-fiber-library-app/platform/database"
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
 	"time"
 )

@@ -1,5 +1,11 @@
 package main
 
+import (
+	"github.com/boconlonton/ho-golang-fiber-library-app/pkg/configs"
+	"github.com/boconlonton/ho-golang-fiber-library-app/pkg/middleware"
+	"github.com/gofiber/fiber/v2"
+)
+
 // @title API
 // @version 1.0
 // @description This is an auto-generated API docs.
@@ -14,5 +20,11 @@ package main
 // @BasePath /api
 func main() {
 	// Define Fiber config
-	config := configs.
+	config := configs.FiberConfig()
+
+	// Define a new Fiber app with config.
+	app := fiber.New(config)
+
+	// Middlewares.
+	middleware.FiberMiddleware(app)
 }
