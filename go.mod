@@ -16,6 +16,7 @@ require (
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/gorilla/schema v1.1.0 // indirect
 	github.com/jmoiron/sqlx v1.3.4 // indirect
+	github.com/joho/godotenv v1.4.0 // indirect
 	github.com/klauspost/compress v1.13.4 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/mattn/go-colorable v0.1.7 // indirect
