@@ -3,7 +3,6 @@
 .editorconfig
 .gitignore
 .env.example
-.env
 Dockerfile
 Makefile
 LICENSE
