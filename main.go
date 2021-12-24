@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/boconlonton/ho-golang-fiber-library-app/pkg/configs"
 	"github.com/boconlonton/ho-golang-fiber-library-app/pkg/middleware"
+	"github.com/boconlonton/ho-golang-fiber-library-app/pkg/routes"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -27,4 +28,10 @@ func main() {
 
 	// Middlewares.
 	middleware.FiberMiddleware(app)
+
+	// Routes.
+	routes.SwaggerRoute(app)  // Register a route for API Docs (Swagger).
+	routes.PublicRoutes(app)  // Register a public routes for app.
+	routes.PrivateRoutes(app) // Register a private routes for app.
+	routes.NotFoundRoute(app) // Register route for 404 Error.
 }
