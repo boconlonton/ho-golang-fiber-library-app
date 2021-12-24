@@ -8,6 +8,7 @@ require (
 	github.com/go-playground/validator/v10 v10.9.0 // indirect
 	github.com/golang-migrate/migrate v3.5.4+incompatible // indirect
 	github.com/google/uuid v1.3.0 // indirect
+	github.com/jmoiron/sqlx v1.3.4 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
 	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97 // indirect
 	golang.org/x/sys v0.0.0-20210806184541-e5e7981a1069 // indirect
