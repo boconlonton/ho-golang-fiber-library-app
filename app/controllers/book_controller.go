@@ -4,6 +4,7 @@ import (
 	"github.com/boconlonton/ho-golang-fiber-library-app/platform/database"
 	"github.com/gofiber/fiber"
 	"github.com/google/uuid"
+	"time"
 )
 
 // GetBooks func gets all exists books.
@@ -92,4 +93,21 @@ func GetBook(c *fiber.Ctx) error {
 		"msg":   nil,
 		"book":  book,
 	})
+}
+
+// CreateBook func for creates a new book.
+// @Description Create a new book.
+// @Summary created a new book
+// @Tags Book
+// @Accept json
+// @Produce json
+// @Param title body string true "Title"
+// @Param author body string true "Author"
+// @Param book_attrs body models.BookAttrs true "Book attributes"
+// @Success 201 {object} models.Book
+// @Security ApiKeyAuth
+// @Router /v1/book [post]
+func CreateBook(c *fiber.Ctx) error {
+	// Get now time.
+	now := time.Now().Unix()
 }
